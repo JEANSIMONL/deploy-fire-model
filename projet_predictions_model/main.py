@@ -5,14 +5,14 @@ from playsound3 import playsound
 import time
 
 # Charger les modèles individuellement
-model_feu = YOLO('/home/wecode-071/Téléchargements/Fire_predictions_dataset/feu.pt')
-alert_feu = '/home/wecode-071/Téléchargements/Fire_predictions_dataset/feu.mp3'
+model_feu = YOLO('/workspaces/deploy-fire-model/projet_predictions_model/feu.pt')
+alert_feu = '/workspaces/deploy-fire-model/projet_predictions_model/feu.mp3'
 
-model_smoke = YOLO('/home/wecode-071/Téléchargements/Fire_predictions_dataset/smoke.pt')
-alert_smoke = '/home/wecode-071/Téléchargements/Fire_predictions_dataset/smoke.mp3'
+model_smoke = YOLO('/workspaces/deploy-fire-model/projet_predictions_model/smoke.pt')
+alert_smoke = '/workspaces/deploy-fire-model/projet_predictions_model/smoke.mp3'
 
-model_accident = YOLO('/home/wecode-071/Téléchargements/Fire_predictions_dataset/accident.pt')
-alert_accident = '/home/wecode-071/Téléchargements/Fire_predictions_dataset/accident.mp3'
+model_accident = YOLO('/workspaces/deploy-fire-model/projet_predictions_model/accident.pt')
+alert_accident = '/workspaces/deploy-fire-model/projet_predictions_model/accident.mp3'
 
 if "camera_on" not in st.session_state:
     st.session_state["camera_on"] = False
