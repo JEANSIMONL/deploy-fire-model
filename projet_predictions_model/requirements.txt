@@ -1,4 +1,4 @@
-ultralytics
+numpy
 opencv-python-headless
 playsound3
-numpy
+ultralytics
